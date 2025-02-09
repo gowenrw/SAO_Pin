@@ -1,0 +1,21 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 76e0693d-ff9d-4ab6-bdc1-b5fc612b8150)
+
+  (paper "USLetter")
+
+  (title_block
+    (title "TEMPLATEPCB")
+    (date "2025-02-09")
+    (rev "1")
+    (company "Crafted by @alt_bier a.k.a. Richard Gowen")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
