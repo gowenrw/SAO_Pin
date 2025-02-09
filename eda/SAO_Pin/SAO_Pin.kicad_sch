@@ -5,7 +5,7 @@
   (paper "USLetter")
 
   (title_block
-    (title "TEMPLATEPCB")
+    (title "SAO_Pin")
     (date "2025-02-09")
     (rev "1")
     (company "Crafted by @alt_bier a.k.a. Richard Gowen")
