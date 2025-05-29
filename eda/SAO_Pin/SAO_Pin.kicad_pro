@@ -513,8 +513,8 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
-      "plot": "gerber/",
+      "netlist": "SAO_Pin.net",
+      "plot": "gerber/2025-05-29/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

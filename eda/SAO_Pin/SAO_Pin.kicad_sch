@@ -883,7 +883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_local:BatteryHolder_CR2032-BS-2-1_Front_backsilk"
+		(property "Footprint" "0_local:BatteryHolder_CR2032-BS-2-1_Back_backsilk"
 			(at 137.16 139.446 90)
 			(effects
 				(font

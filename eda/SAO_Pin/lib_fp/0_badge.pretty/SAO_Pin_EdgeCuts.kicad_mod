@@ -1,0 +1,133 @@
+(footprint "SAO_Pin_EdgeCuts"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "EdgeCuts"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "78dfa4d0-2c0b-4560-97e4-8e63f06071ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a852cf26-e8a6-4ece-a8a1-6d82b72c9a55")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f005480-8bb9-4b2b-b471-1bf38528c990")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c1526e62-9531-41cf-8a0c-67668244a463")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -12.5 22)
+		(end -12.5 -15.000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "75e9d933-6ead-4692-b78f-bd20ece6755c")
+	)
+	(fp_line
+		(start -9.5 -18)
+		(end 9.5 -18.000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "a0e41fa3-f138-4957-bca4-08aa37e41123")
+	)
+	(fp_line
+		(start 12.5 -15.000001)
+		(end 12.5 22)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f2969a87-746f-48a7-bedd-a5ea1dfaaae2")
+	)
+	(fp_line
+		(start 12.5 22)
+		(end -12.5 22)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "42650e7d-79be-4979-a28f-a366e1a02501")
+	)
+	(fp_arc
+		(start -12.500001 -15.000001)
+		(mid -11.621321 -17.121321)
+		(end -9.500001 -18.000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "36dbc5dc-cf6e-4907-aede-8a7e637c81f3")
+	)
+	(fp_arc
+		(start 9.500001 -18.000001)
+		(mid 11.621321 -17.121321)
+		(end 12.500001 -15.000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ef6be4dc-795a-4130-b35e-b8629fa902de")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "86aeb2c3-295e-4fc2-82e0-b151285bbcb9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
