@@ -2,8 +2,7 @@
 layout: default
 ---
 
-![sao_pin_3d_front_wmodels.jpg](./images/sao_pin_3d_front_wmodels.jpg)
-![sao_pin_3d_back_wmodels.jpg](./images/sao_pin_3d_back_wmodels.jpg)
+![sao_pin_3d.jpg](./images/sao_pin_3d.jpg)
 
 # SAO_Pin
 
