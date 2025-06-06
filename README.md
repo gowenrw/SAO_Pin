@@ -15,7 +15,7 @@ This is the file structure of this repository
 * [/code/](./code/) - All project related Code / Firmware
 * [/docs/](./docs/) - Documentation created by this project including web pages
 * [/eda/](./eda/) - Electronic Design Automation files (i.e. KiCad)
-  * [/eda/SAO_Pin/](./eda/SAO_Pin/) - KiCad 7.x project folder for the SAO_Pin PCB
+  * [/eda/SAO_Pin/](./eda/SAO_Pin/) - KiCad 9.x project folder for the SAO_Pin PCB
 * [/reference_parts/](./reference_parts/) - Submodule of Third Party Documentation related to components
 * [./README.md](/README.md) - This File
 * [./LICENSE](/LICENSE) - Currently set to MIT
@@ -31,31 +31,38 @@ To update it to a newer commit after its been added use this cmd:
 git submodule update --init --recursive
 ```
 
-## PCB_Project_Template
+## Project Details
 
-Notes on use: 
+The SAO_Pin is a simple adapter that will allow you to wear any badge Shitty Add On (SAO) as a broach pin instead of being attached to a badge or a totem.
 
-* First replace all references to SAO_Pin in this document to whatever your project name is.
+The PCB is small at 25mm x 40mm, just large enough to hold its few components and hopefully small enough to be hidden behind any attached SAO.
 
-* Next fix up the KiCad project folder which references a name TEMPLATEPCB to replace both its filename references as well as references inside those files using sed like so (linux/windows-bash):
-```bash
-mv eda/TEMPLATEPCB eda/SAO_Pin
-cat eda/SAO_Pin/TEMPLATEPCB.kicad_pro | sed s/TEMPLATEPCB/SAO_Pin/g >eda/SAO_Pin/SAO_Pin.kicad_pro
-rm eda/SAO_Pin/TEMPLATEPCB.kicad_pro
-cat eda/SAO_Pin/TEMPLATEPCB.kicad_pcb | sed s/TEMPLATEPCB/SAO_Pin/g >eda/SAO_Pin/SAO_Pin.kicad_pcb
-rm eda/SAO_Pin/TEMPLATEPCB.kicad_pcb
-cat eda/SAO_Pin/TEMPLATEPCB.kicad_sch | sed s/TEMPLATEPCB/SAO_Pin/g >eda/SAO_Pin/SAO_Pin.kicad_sch
-rm eda/SAO_Pin/TEMPLATEPCB.kicad_sch
-```
+The Gerber files have been made available [HERE](./eda/SAO_Pin/gerber/2025-06-03.zip) for anyone to use to order thier own PCBs.
+Simply download the [ZIP file](./eda/SAO_Pin/gerber/2025-06-03.zip) and then choose your PCB manufacture to upload it to for ordering.
 
-* Next fix up the docs folder which references a name TEMPLATEDOC to replace both its filename references as well as references inside those files using sed like so (linux/windows-bash):
-```bash
-cat docs/TEMPLATEDOC-_config.yml | sed s/TEMPLATEDOC/SAO_Pin/g >docs/_config.yml
-rm docs/TEMPLATEDOC-_config.yml
-cat docs/TEMPLATEDOC-CNAME | sed s/TEMPLATEDOC/SAO_Pin/g >docs/CNAME
-rm docs/TEMPLATEDOC-CNAME
-cat docs/TEMPLATEDOC-index.md | sed s/TEMPLATEDOC/SAO_Pin/g >docs/index.md
-rm docs/TEMPLATEDOC-index.md
-```
+The design is simple, requiring only four components:
+* SAO 2x3 keyed socket header, the type used on badges not the type used on SAO's.
+* CR2032 Battery Holder with THT pins
+* 20mm Brooch clip pin clasp with M2 sized screw holes for attachment
+* M2 screws and nuts for attaching the pin.
 
-* Finally remove this section from this document.
+Here are some links for ordering the components:
+
+* SAO 2x3 keyed socket header, the type used on badges not the type used on SAO's.
+  * https://www.aliexpress.us/item/2251832874579437.html
+  * https://www.ebay.com/itm/173960769032
+
+* CR2032 Battery Holder with THT pins
+  * https://www.aliexpress.us/item/3256806213778380.html
+  * https://www.amazon.com/dp/B07T3WP9T4
+
+* 20mm Brooch clip pin clasp with M2 sized screw holes for attachment
+  * https://www.aliexpress.us/item/2255800106050402.html - Choose the 2cm option
+  * https://www.amazon.com/dp/B0BJJ4L94L - Choose the 20mm option
+
+* M2 screws and nuts for attaching the pin.
+  * https://www.aliexpress.us/item/3256808318392916.html - Choose M2 Screw 5mm Length
+  * https://www.amazon.com/dp/B082XXXRV6 - Choose M2 Screw 5mm Length
+  * https://www.aliexpress.us/item/3256806543218419.html - Choose M2 Nut
+  * https://www.amazon.com/dp/B0CMG7Q27P - Choose M2 Nut
+

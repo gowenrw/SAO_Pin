@@ -1,6 +1,7 @@
 # Code
 
-This is where all the all project related Code / Firmware is located
+This is where all the all project related Code / Firmware would be located...
+But this project HAS NO CODE.
 
 ## File Structure
 
